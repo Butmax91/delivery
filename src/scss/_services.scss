@@ -1,0 +1,27 @@
+/* Servives */
+.services {
+	padding: 80px 0;
+	background: $text-hover;
+	color: $text-color;
+	img {
+		margin-top: 35px;
+		margin-bottom: 25px;
+	}
+	&-block {
+		display: flex;
+		justify-content: space-between;
+		&-tittle {
+		text-transform: uppercase;
+		font-size: 24px;
+		line-height: 24px;
+		font-family: 'Segoe UI SemiBold';
+		margin-bottom: 17px;
+		}
+		&-text {
+			font-size: 12px;
+			font-family: 'Segoe UI SemiBold';
+			line-height: 18px;
+		}
+	}
+
+}

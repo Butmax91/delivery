@@ -1,0 +1,95 @@
+/*  Header */
+.header {
+	min-height: 800px;
+	background: url('../img/hero-bg.jpg') no-repeat center top;
+	background-color: rgba(68,79,86, 0.8);
+	background-size: cover;
+	position: relative;
+	padding-bottom: 250px;
+}
+.container-fluid{
+	background-color: rgba(68,79,86, 0.8);
+}
+.navbar-brand{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Segoe UI Bold';
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	height: 150px;
+	text-transform: uppercase;
+	color: $text-color !important;
+	span {
+		color: $text-hover !important;
+	}
+	a:hover{
+		color: $text-color !important;
+	}
+	@media (max-width: 992px) {
+		height: 60px;
+	}
+}
+
+.navbar-toggler{
+	&:focus{
+		outline: none;
+	}
+
+}
+#burger{
+	color:$text-color;
+	font-size: 30px;
+
+}
+.navbar {
+	&-item {
+		padding: 10px 17px;
+		border: 2px solid transparent;
+		margin-left: 30px;
+		color: $text-color;
+		font-family: 'Segoe UI Bold';
+		font-weight: bold;
+		line-height: 24px;
+		text-transform: uppercase;
+		transition: 300ms ease-in-out;
+		cursor: pointer;
+		&:hover {
+			color: $text-hover !important;
+			border-color: $text-hover;
+		}
+	}
+	&-active {
+		color: $text-hover;
+		border: 2px solid $text-hover;
+	}
+	a{
+		&:hover{
+			color:inherit;
+		}
+	}
+}
+.hero {
+	text-align: center;
+	margin-top: 250px;
+	&-tittle {
+		font-size: 42px;
+		font-family: 'Segoe UI Light';
+		font-weight: 300;
+		line-height: 75px;
+		color: $text-color;
+		position: relative;
+		text-transform: uppercase;
+		@media (max-width: 992px) {
+			font-size: 32px;
+		}
+	}
+	span {
+		background-color: #444f56;
+		padding: 5px 20px;
+
+	}
+}
+
+
