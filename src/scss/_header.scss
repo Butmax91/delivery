@@ -1,95 +1,39 @@
-/*  Header */
-.header {
-	min-height: 800px;
-	background: url('../img/hero-bg.jpg') no-repeat center top;
-	background-color: rgba(68,79,86, 0.8);
-	background-size: cover;
-	position: relative;
-	padding-bottom: 250px;
+.header{
+  padding: 10px;
+  background: $background-color;
+  margin-top: 20px;
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  &-search{
+    color: $text-color;
+    cursor: pointer;
+    font-size: 28px;
+    &:hover{
+      color: darken($text-color,10%);
+    }
+  }
+  &-auth{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    button{
+      border-radius: 10px;
+      text-transform: capitalize;
+      background: $text-color;
+      color:$text-dark;
+      outline: none;
+      border:none;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px 25px;
+      &:last-child{
+        margin-left: 10px;
+      }
+    }
+  }
 }
-.container-fluid{
-	background-color: rgba(68,79,86, 0.8);
-}
-.navbar-brand{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Segoe UI Bold';
-	font-size: 30px;
-	line-height: 24px;
-	font-weight: bold;
-	height: 150px;
-	text-transform: uppercase;
-	color: $text-color !important;
-	span {
-		color: $text-hover !important;
-	}
-	a:hover{
-		color: $text-color !important;
-	}
-	@media (max-width: 992px) {
-		height: 60px;
-	}
-}
-
-.navbar-toggler{
-	&:focus{
-		outline: none;
-	}
-
-}
-#burger{
-	color:$text-color;
-	font-size: 30px;
-
-}
-.navbar {
-	&-item {
-		padding: 10px 17px;
-		border: 2px solid transparent;
-		margin-left: 30px;
-		color: $text-color;
-		font-family: 'Segoe UI Bold';
-		font-weight: bold;
-		line-height: 24px;
-		text-transform: uppercase;
-		transition: 300ms ease-in-out;
-		cursor: pointer;
-		&:hover {
-			color: $text-hover !important;
-			border-color: $text-hover;
-		}
-	}
-	&-active {
-		color: $text-hover;
-		border: 2px solid $text-hover;
-	}
-	a{
-		&:hover{
-			color:inherit;
-		}
-	}
-}
-.hero {
-	text-align: center;
-	margin-top: 250px;
-	&-tittle {
-		font-size: 42px;
-		font-family: 'Segoe UI Light';
-		font-weight: 300;
-		line-height: 75px;
-		color: $text-color;
-		position: relative;
-		text-transform: uppercase;
-		@media (max-width: 992px) {
-			font-size: 32px;
-		}
-	}
-	span {
-		background-color: #444f56;
-		padding: 5px 20px;
-
-	}
-}
-
-
